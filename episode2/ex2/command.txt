@@ -1,0 +1,4 @@
+sudo systemctl status cron
+
+Pour voir si c'est actif au démarrage de la machine
+sudo systemctl is-enabled cron
