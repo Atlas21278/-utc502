@@ -1,0 +1,8 @@
+# Créer l'utilisateur apprenant1
+sudo adduser apprenant1 --gecos "Apprenant 1 ESIEE-IT,,,:/home/apprenant1:/bin/bash" --disabled-password
+
+# Créer le groupe etudiants s'il n'existe pas
+sudo groupadd -f etudiants
+
+# Ajouter l'utilisateur apprenant1 au groupe etudiants
+sudo usermod -aG etudiants apprenant1
